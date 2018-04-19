@@ -16,6 +16,7 @@ header, main{
 main{
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column ;
 }
 
 section{
