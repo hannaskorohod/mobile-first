@@ -16,7 +16,7 @@ header, main{
 main{
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column ;
+	flex-direction: column;
 }
 
 section{
@@ -48,6 +48,9 @@ section{
 .image{
 	height: 200px;
 	background: #b3b3b3;
+	width: 100%;
+    margin:0 auto 20px;
+    border-radius: 8px;
 }
 
 .row{
@@ -69,12 +72,16 @@ section{
 
 main{
 	flex-direction: row;
-	justify-content: space-between;}
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-.width{
-    margin-bottom: 30px;}
 }
 
+.image{
+    width: 90%;
+}
+
+}
 
 /* Portrait tablets and desktops */
 @media screen and (min-width: 992px) {
@@ -92,8 +99,11 @@ main{
 	height: 400px;}
 
 main{
+	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;}
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 	
 .width{
     margin-bottom: 30px;}
